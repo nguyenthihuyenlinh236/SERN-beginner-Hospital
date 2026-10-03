@@ -81,8 +81,7 @@ let updateUserData = (data) => {
 
                 await user.save();
 
-                let allUsers = await db.User.findAll();
-                resolve(allUsers);
+                resolve();
             } else {
                 resolve();
             }
